@@ -41,6 +41,10 @@ const router = createBrowserRouter([
                 errorElement: <Error />,
                 action: updateOrderAction,
             },
+            {
+                path: '*', // This matches all routes not defined above
+                element: <Home />, // Redirect to Home component
+            },
         ],
     },
 ]);
